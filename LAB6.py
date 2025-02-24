@@ -1,20 +1,20 @@
 # 1. Python program to check if the given string is a palindrome 
 
-# def isPalindrome(str):
-#     reverse_str = str[::-1]
+def isPalindrome(str):
+    reverse_str = str[::-1]
 
-#     if(str == reverse_str):
-#         print("Is Palindrome")
-#     else:
-#         print("Is Not Palindrome")
+    if(str == reverse_str):
+        print("Is Palindrome")
+    else:
+        print("Is Not Palindrome")
 
-# str = "abcba"
-# print("Original string: ",str)
-# result = isPalindrome(str)
+str = "abcba"
+print("Original string: ",str)
+result = isPalindrome(str)
 
-# str1 = "Hello"
-# print("Original string: ",str1)
-# result = isPalindrome(str1)
+str1 = "Hello"
+print("Original string: ",str1)
+result = isPalindrome(str1)
 
 
 # 2. Python program to check if a given number is an Armstrong number
@@ -40,21 +40,3 @@ while num != 0:
     count = count + 1
 
 result = isArmstrong(given_num,count)
-    
-# print(count)
-
-
-# given_number = int(input("Enter a number"))
-
-# given_number=str(given_number)
-
-# string_length = len(given_number)
-# sum=0
-
-# for i in given_number:
-#     sum+=int(i)**string_length
-
-# if sum==int(given_number):
-#     print("Armstrong number")
-# else:
-#     print("Not armstrong no")
