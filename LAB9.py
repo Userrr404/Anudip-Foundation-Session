@@ -16,6 +16,8 @@ for i in list_1:
 
 print("Smallest number from a list: ",smallest_num)
 
+# 2. Write a Python program to find duplicate values from a list and display those.
+
 list_2 = [1,2,2,3,4,4,5,5,6,6,6,5]
 print("Original list: ",list_2)
 dup_list_num = []

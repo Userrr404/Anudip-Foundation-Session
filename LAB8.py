@@ -1,15 +1,15 @@
 # 1. WAP to remove repeated members from a string. print original and resultant string.
 
-# def removeReapeted(str):
-#     result = ""
-#     for char in str.split(" "):
-#         if char not in result:
-#             result = result + ' ' +char
-#     print("After removing repeated word from string: " +result)
+def removeReapeted(str):
+    result = ""
+    for char in str.split(" "):
+        if char not in result:
+            result = result + ' ' +char
+    print("After removing repeated word from string: " +result)
 
-# str = "hey yogesh and avinash and hey lavesh"
-# print("Original String: " + str)
-# removeReapeted(str)
+str = "hey yogesh and avinash and hey lavesh"
+print("Original String: " + str)
+removeReapeted(str)
 
 # 2. WAP with several string methods.
 str1 = "lab 8 example 2."
