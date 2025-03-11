@@ -7,39 +7,39 @@
 #Bob, 25,
 #Charlie, 35, Chicago
 
-# import csv
+import csv
 
-# # OPEN THE FILE
-# with open('missingData.csv','r') as file:
-#     # READ THE FILE
-#     csv_reader = csv.reader(file)
+# OPEN THE FILE
+with open('missingData.csv','r') as file:
+    # READ THE FILE
+    csv_reader = csv.reader(file)
 
-#     header = next(csv_reader)
+    header = next(csv_reader)
 
-#     cleaned_data = [header]
+    cleaned_data = [header]
 
-#     for row in csv_reader:
-#         name = row[0] if row[0] else "Unknown"
-#         age = str(row[1]) if str(row[1]) else "0"
-#         city = row[2] if row[2] else "Unknown"
+    for row in csv_reader:
+        name = row[0] if row[0] else "Unknown"
+        age = str(row[1]) if str(row[1]) else "0"
+        city = row[2] if row[2] else "Unknown"
 
-#         cleaned_data.append([name,age,city])
+        cleaned_data.append([name,age,city])
 
-# with open('modify_data.csv','w',newline='') as file:
-#     csv_writer = csv.writer(file)
-#     csv_writer.writerows(cleaned_data)
+with open('modify_data.csv','w',newline='') as file:
+    csv_writer = csv.writer(file)
+    csv_writer.writerows(cleaned_data)
 
-# print("Missing values replaces and data stored to 'modify_data.csv'")
+print("Missing values replaces and data stored to 'modify_data.csv'")
 
-# # Open the CSV file in read mode ('r')
-# with open('modify_data.csv', mode='r') as file: 
-#      # Create a CSV reader object to iterate through the file
-#     csv_reader = csv.reader(file)
+# Open the CSV file in read mode ('r')
+with open('modify_data.csv', mode='r') as file: 
+     # Create a CSV reader object to iterate through the file
+    csv_reader = csv.reader(file)
 
-#     # Read the first row (header) to skip it
-#     header = next(csv_reader) 
-#     for row in csv_reader:
-#         print(f"Name: {row[0]}, Age: {row[1]}, City: {row[2]}")
+    # Read the first row (header) to skip it
+    header = next(csv_reader) 
+    for row in csv_reader:
+        print(f"Name: {row[0]}, Age: {row[1]}, City: {row[2]}")
 
 
 # 2. Write a Python script to validate JSON data by checking if it contains required
