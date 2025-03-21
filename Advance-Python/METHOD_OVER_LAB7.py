@@ -1,3 +1,78 @@
+# Objective: Design a simple e-commerce system using Python classes to manage products, customers, and orders.
+#            Implement instance variables, class variables, method overloading (simulated), static methods, and class methods. 
+
+# 1. Class Definitions:     
+#   ● Product Class: 
+#       ○ Instance Variables:
+#           ■ name: The name of the product. 
+#           ■ price: The price of the product. 
+#           ■ stock: The quantity available in stock. 
+#       ○ Class Variables:
+#           ■ total_products: A class variable to keep track of the total number of products. 
+
+#   ● Customer Class:   
+#       ○ Instance Variables: 
+#           ■ name: The name of the customer. 
+#           ■ email: The email address of the customer. 
+#           ■ order_history: A list of orders made by the customer. 
+#       ○ Class Variables:
+#           ■ customer_count: A class variable to keep track of the number of customers. 
+
+#   ● Order Class: 
+#       ○ Instance Variables: 
+#           ■ order_id: The unique ID for the order.
+#           ■ customer: The customer who placed the order. 
+#           ■ products: A dictionary of products and their quantities in the order. 
+#       ○ Class Variables:
+#           ■ order_count: A class variable to keep track of the total number of orders. 
+
+
+
+# 2. Initialization: 
+#   ● Product Class: 
+#       ○ Initialize with name, price, and stock. Increment the total_products class variable when a new product is added.\
+#   ● Customer Class: 
+#       ○ Initialize with name, email, and an empty order_history. Increment the customer_count class variable when a new customer is created. 
+#   ● Order Class: 
+#       ○ Initialize with order_id, customer, and an empty dictionary of products. Increment the order_count class variable when a new order is created.
+
+#  3. Instance Methods: 
+#   ● Product Class: 
+#       ○ update_stock(quantity): Update the stock quantity when a product is sold or restocked.
+#   ● Customer Class: 
+#       ○ place_order(order): Add an Order instance to the customer's order_history. 
+#   ● Order Class: 
+#       ○ add_product(product, quantity): Add a Product and its quantity to the order. 
+
+
+
+# 4. Method Overloading (Simulated): 
+#   ● Product Class: 
+#       ○ Simulate method overloading with display_info() to show product details in different formats (basic or detailed). 
+
+
+
+# 5. Static Methods: 
+#   ● Product Class: 
+#       ○ product_info(): A static method to return general information about products. 
+#   ● Customer Class: 
+#       ○ customer_info(): A static method to return general information about customers.
+#   ● Order Class: 
+#       ○ order_info(): A static method to return general information about orders.
+
+#  6. Class Methods: 
+#   ● Product Class: 
+#       ○ get_total_products(): A class method to return the total number of products. 
+#   ● Customer Class:  
+#       ○ get_customer_count(): A class method to return the total number of customers. 
+#   ● Order Class: 
+#       ○ get_order_count(): A class method to return the total number of orders. 
+
+# Instructions: 
+#   1. Create the Classes: 
+#       ○ Implement the Product, Customer, and Order classes based on the specifications above.
+
+
 # CLASS 1
 class Product:
 
@@ -107,7 +182,11 @@ class Order:
     def get_order_count(cls):
         return cls.order_count
 
-
+# 2. Test the Classes:    
+#     ○ Create instances of Product, Customer, and Order. 
+#     ○ Add products to the inventory, create orders, and place them for customers.
+#     ○ Use the method overloading simulation to display product details in different formats. 
+#     ○ Call static methods to get general information and class methods to get counts.
 
 # Testing the classes
 # Create products
@@ -135,18 +214,25 @@ customer2.place_order(order1)
 customer2.place_order(order2)
 
 # Display product details
-print(product1.display_info())  # Basic info
+ # Basic info
+print(product1.display_info()) 
 print(product2.display_info())
-print(product1.display_info(detailed=True))  # Detailed info
-print(product2.display_info(detailed=True))  # Detailed info
+
+# Detailed info
+print(product1.display_info(detailed=True))  
+print(product2.display_info(detailed=True))  
 
 # Static and class methods
 print(Product.product_info())
 print(Customer.customer_info())
 print(Order.order_info())
 
-print("Total Products: ",Product.get_total_products())  # Total products
-print("Total customers: ",Customer.get_customer_count())  # Total customers
-print("Total orders: ",Order.get_order_count())  # Total orders
+# Total products
+print("Total Products: ",Product.get_total_products()) 
 
+# Total customers
+print("Total customers: ",Customer.get_customer_count())
+
+# Total orders
+print("Total orders: ",Order.get_order_count())  
     

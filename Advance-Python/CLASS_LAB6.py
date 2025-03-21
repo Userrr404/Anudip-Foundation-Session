@@ -1,3 +1,10 @@
+# Q.1 --> Create a class Employee that manages employee details:
+
+#  1. Instance Attributes: ○ name: The employee's name. ○ salary: The employee's salary. ○ position: The employee's position. 
+
+# 2. Methods: ○ promote(self, new_position): Updates the employee's position. '
+# '           ○ update_salary(self, new_salary): Updates the employee's salary. 
+#             ○ display_info(self): Displays the employee's name, position, and salary
 class Employee:
     def __init__(self,name,salary,position):
         self.name = name
@@ -33,6 +40,18 @@ emp1.update_salary(50000)
 
 # DISPLAYING EMPLOYEE DETAILS
 emp1.display_info()
+
+# Q.2-->
+
+# Create a class MovieLibrary that manages a collection of movies:
+
+# 1. Class Attribute: ○ available_movies: A list of all movies available in the library. 
+
+# 2. Instance Attributes: ○ member_name: The name of the library member. ○ borrowed_movies: A list of movies borrowed by the member. 
+
+# 3. Methods: ○ borrow_movie(self, movie): Borrows a movie from the library if available. 
+#             ○ return_movie(self, movie): Returns a movie to the library. 
+#             ○ view_borrowed_movies(self): Prints a list of movies borrowed by the member
 
 class MovieLibrary:
     available_movies = ["Witcher", "Mr. Robot", "Titanic", "Internship", "Live on"]
