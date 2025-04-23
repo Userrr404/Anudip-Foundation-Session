@@ -1,0 +1,128 @@
+<!-- Q. Create a survey form with the following attribute and labels as the image shown below:
+
+●      Name
+
+●      Email
+
+●      Age
+
+●      Add a question in the survey form like Would you recommend this survey form to a friend?
+
+●      Add checkboxes to select a Languages and Frameworks known. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        form {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+            font-size: 24px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 98%;
+            padding: 10px;
+            margin: 8px 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            font-weight: normal;
+        }
+
+        textarea {
+            height: 80px;
+            width: 95%;
+            resize: none; /* This disables the ability to stretch/resize */
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Survey Form</h2>
+
+        <input type="text" placeholder="Enter your name" required>
+
+        <input type="email" placeholder="Enter your email" required>
+
+        <input type="number" placeholder="Enter your age" required>
+
+        <select>
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+
+        <div class="radio-group">
+            <label>Would you recommend this survey form to a friend?</label>
+            <label><input type="radio" name="recommend" value="yes"> Yes</label>
+            <label><input type="radio" name="recommend" value="no"> No</label>
+            <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+        </div>
+
+        <div class="checkbox-group">
+            <label>Languages and Frameworks known (Check all that apply)</label>
+            <label><input type="checkbox" name="lang" value="java"> Java</label>
+            <label><input type="checkbox" name="lang" value="python"> Python</label>
+            <label><input type="checkbox" name="lang" value="react"> React</label>
+            <label><input type="checkbox" name="lang" value="angular"> Angular</label>
+            <label><input type="checkbox" name="lang" value="spring"> Spring</label>
+        </div>
+
+        <label>Any comments or suggestions</label>
+        <textarea></textarea>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+</body>
+</html>
+

@@ -1,0 +1,67 @@
+<!-- 1. Create a Webpage using an HTML table that shows products and their price. Write the table heading with bold text.
+
+A sample page will look like this: -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Online Items and Prices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th {
+            background-color: #1c77da;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sample Online Items and Prices</h1>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>$800</td>
+        </tr>
+        <tr>
+            <td>Smartphone</td>
+            <td>$400</td>
+        </tr>
+        <tr>
+            <td>Headphones</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>$300</td>
+        </tr>
+    </table>
+
+</body>
+</html>
